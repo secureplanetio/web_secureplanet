@@ -1,0 +1,11 @@
+company_key_base: '07b2d5fe8215ef6befb5fd1672eb570ba06590fb066d8c20551923fe790055d71bd077a79ac50eddf6f65576fdbd5b45f04deba39e5b8a1e685c42f1f24a18dc'
+path:
+  project_root:     'planet_root'
+  custom:           'custom'
+user:
+  first_user: 'planet_resident@secureplanet.foundation'
+  first_default_pw: 'changeMe!!!'
+company:
+  cvss:
+    v20: '2.0'
+    v10: '1.0'

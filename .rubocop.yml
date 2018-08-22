@@ -1,0 +1,38 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'bin/*'
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'Guardfile'
+    - 'Rakefile'
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 100
+  Enabled: true
+  Exclude:
+    - 'config/**/*'
+Rails/TimeZone:
+  Enabled: false
+SignalException:
+  Enabled: false
+Style/DotPosition:
+  EnforcedStyle: leading
+Style/PredicateName:
+  NamePrefix:
+    - is_
+    - have_
+  NamePrefixBlacklist:
+    - is_
+    - have_
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+  Enabled: true
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+  Enabled: true
+Style/FrozenStringLiteralComment:
+  Enabled: false

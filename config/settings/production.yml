@@ -1,0 +1,6 @@
+db:
+  host: 172.173.0.1
+  port: 5432
+  database: secureplanet_production_db
+  username: secureplanet
+  password: secureplanet

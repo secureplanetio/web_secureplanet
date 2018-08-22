@@ -1,0 +1,35 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+
+development:
+  <<: *default
+  host: <%= Settings.db.host %>
+  port: <%= Settings.db.port %>
+  database: <%= Settings.db.database %>
+  username: <%= Settings.db.username %>
+  password: <%= Settings.db.password %>
+
+test:
+  <<: *default
+  username: secureplanet
+  password: secureplanet
+  database: secureplanet_test
+
+staging:
+  <<: *default
+  host: <%= Settings.db.host %>
+  port: <%= Settings.db.port %>
+  database: <%= Settings.db.database %>
+  username: <%= Settings.db.username %>
+  password: <%= Settings.db.password %>
+
+production:
+  <<: *default
+  host: <%= Settings.db.host %>
+  port: <%= Settings.db.port %>
+  database: <%= Settings.db.database %>
+  username: <%= Settings.db.username %>
+  password: <%= Settings.db.password %>
